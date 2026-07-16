@@ -1,0 +1,207 @@
+.feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--anthracite);
+    color: var(--cream)
+}
+
+.feature-image {
+    min-height: 520px;
+    background: url('https://images.unsplash.com/photo-1627662168100-416ddce58976?auto=format&fit=crop&w=1200&q=80') center/cover
+}
+
+.feature-copy {
+    padding: clamp(3rem, 8vw, 8rem);
+    align-self: center
+}
+
+.feature-copy .eyebrow {
+    color: var(--cream)
+}
+
+.feature-copy h2 {
+    font-size: clamp(2.4rem, 4vw, 4.4rem)
+}
+
+.feature-copy p:not(.eyebrow) {
+    max-width: 30rem
+}
+
+.text-link {
+    color: var(--cream);
+    font-weight: 700
+}
+
+.page-hero {
+    padding: clamp(5rem, 11vw, 11rem) 4vw clamp(3rem, 6vw, 6rem);
+    max-width: 980px
+}
+
+.page-hero p:last-child {
+    max-width: 35rem;
+    font-size: 1.1rem
+}
+
+.menu {
+    padding-top: 1rem;
+    max-width: 1000px;
+    margin: auto
+}
+
+.menu-category {
+    margin-bottom: 4rem
+}
+
+.menu-category h2 {
+    font-size: 2.5rem;
+    border-bottom: 2px solid var(--anthracite);
+    padding-bottom: .7rem
+}
+
+.menu-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--anthracite)
+}
+
+.menu-item h3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    font-family: var(--sans);
+    font-size: 1rem;
+    margin: 0
+}
+
+.menu-item h3 span {
+    white-space: nowrap;
+    font-weight: 500
+}
+
+.menu-item p {
+    margin: .25rem 0 0
+}
+
+.allergens {
+    background: var(--anthracite);
+    color: var(--cream);
+    padding: 1.5rem
+}
+
+.allergens p {
+    margin-bottom: 0
+}
+
+.gallery-old {
+    max-width: 1280px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 260px 280px;
+    gap: 1rem
+}
+
+.photo {
+    min-height: 180px;
+    display: flex;
+    align-items: end;
+    padding: 1rem;
+    color: var(--cream);
+    font-family: var(--serif);
+    font-size: 1.45rem;
+    background-position: center;
+    background-size: cover
+}
+
+.p1 {
+    grid-column: span 5;
+    background-image: linear-gradient(#292b2b55, #292b2bbb), url('https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=80')
+}
+
+.p2 {
+    grid-column: span 3;
+    background-image: linear-gradient(#292b2b55, #292b2bbb), url('https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80')
+}
+
+.p3 {
+    grid-column: span 4;
+    background-image: linear-gradient(#292b2b55, #292b2bbb), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80')
+}
+
+.p4 {
+    grid-column: span 4;
+    background-image: linear-gradient(#292b2b55, #292b2bbb), url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=800&q=80')
+}
+
+.p5 {
+    grid-column: span 8;
+    background-image: linear-gradient(#292b2b55, #292b2bbb), url('https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?auto=format&fit=crop&w=1000&q=80')
+}
+
+.contact-card {
+    background: var(--anthracite);
+    color: var(--cream);
+    padding: 2.5rem
+}
+
+.contact-card h2 {
+    font-size: 2.3rem
+}
+
+.contact-card dt {
+    margin-top: 1.2rem;
+    font-weight: 700;
+    font-size: .76rem;
+    text-transform: uppercase;
+    letter-spacing: .1em
+}
+
+.contact-card dd {
+    margin: .25rem 0 0
+}
+
+.contact-card a {
+    color: var(--cream)
+}
+
+.contact-logo {
+    background: var(--green);
+    height: 370px;
+    display: grid;
+    place-items: center;
+    overflow: hidden
+}
+
+.contact-logo img {
+    width: min(530px, 92vw);
+    display: block
+}
+
+@media(max-width:760px) {
+    .feature {
+        grid-template-columns: 1fr
+    }
+
+    .feature-image {
+        min-height: 340px
+    }
+
+    .gallery-old {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: none
+    }
+
+    .photo,
+    .p1,
+    .p2,
+    .p3,
+    .p4,
+    .p5 {
+        grid-column: auto;
+        min-height: 210px
+    }
+
+    .p1,
+    .p5 {
+        grid-column: span 2
+    }
+}
