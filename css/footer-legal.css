@@ -1,21 +1,32 @@
 .brand span {
     font-size: 1em;
     color: inherit;
-    letter-spacing: inherit
+    letter-spacing: inherit;
 }
 
 .legal-links {
     display: flex;
     flex-wrap: wrap;
-    gap: .65rem
+    gap: .65rem;
 }
 
 .legal-links a {
     color: inherit;
-    font-size: .78rem
+    font-size: .78rem;
 }
 
-.legal-links a+a:before {
+.legal-links a + a:before {
     content: "·";
-    margin-right: .65rem
+    margin-right: .65rem;
+}
+
+@media (max-width: 640px) {
+    .legal-links {
+        flex-direction: column;
+        gap: .25rem;
+    }
+
+    .legal-links a + a:before {
+        display: none;
+    }
 }
