@@ -7,7 +7,7 @@
 .legal-links {
     display: flex;
     flex-wrap: wrap;
-    gap: .65rem;
+    gap: .45rem;
 }
 
 .legal-links a {
@@ -15,18 +15,9 @@
     font-size: .78rem;
 }
 
-.legal-links a + a:before {
-    content: "·";
-    margin-right: .65rem;
-}
-
 @media (max-width: 640px) {
     .legal-links {
         flex-direction: column;
         gap: .25rem;
-    }
-
-    .legal-links a + a:before {
-        display: none;
     }
 }
