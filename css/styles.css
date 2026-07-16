@@ -54,10 +54,9 @@ a {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    min-height: 78px;
     padding: 0 clamp(1rem, 4vw, 4rem);
+    gap: 1.2rem;
+    min-height: 78px;
     border-bottom: 1px solid var(--anthracite);
 }
 
@@ -78,11 +77,9 @@ header {
 
 nav {
     display: flex;
-    flex: 1;
-    flex-wrap: wrap;
+    gap: 1.8rem;
     justify-content: center;
-    gap: 1.2rem;
-    min-width: 0;
+    flex: 1;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -101,7 +98,6 @@ nav a,
 
 .header-actions {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
     margin-left: auto;
@@ -111,8 +107,8 @@ nav a,
 
 .socials {
     display: flex;
-    flex-wrap: wrap;
     gap: .35rem;
+    flex-wrap: wrap;
 }
 
 .socials a {
@@ -495,16 +491,14 @@ footer p {
     nav {
         order: 3;
         width: 100%;
-        justify-content: flex-start;
+        justify-content: center;
         margin: 0;
         padding: 0;
     }
 
     .header-actions {
-        width: 100%;
-        justify-content: space-between;
-        padding-left: 0;
-        margin-left: 0;
+        margin-left: auto;
+        padding-left: 1rem;
     }
 
     .hero,
@@ -555,16 +549,14 @@ footer p {
     }
 
     .header-actions {
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
+        width: auto;
         gap: .6rem;
         padding-left: 0;
+        margin-left: 0;
     }
 
     .socials {
-        display: flex;
-        justify-content: flex-end;
+        display: none;
     }
 
     .hero-copy {
